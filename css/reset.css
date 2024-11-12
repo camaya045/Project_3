@@ -1,0 +1,68 @@
+/* reset.css */
+
+/* Remove all margins, paddings, and borders */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a consistent baseline font size, family, and line height */
+html {
+  font-size: 100%; 
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%; 
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Reset styles for block elements */
+article, aside, footer, header, nav, section, main, figure, figcaption {
+  display: block;
+}
+
+/* Remove list styles on ul, ol elements */
+ul, ol {
+  list-style: none;
+}
+
+/* Remove default styling on images and media */
+img, video, audio, canvas {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Ensure all forms are reset */
+input, button, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+/* Remove default button styles */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+/* Anchor tags without default styling */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Set table elements to not have any padding or borders */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

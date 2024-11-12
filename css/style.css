@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.home-page, .resume-page, .drawings-page {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+.home-page {
+  background-image: url('images/resume.jpg');
+}
+
+.resume-page {
+  background-image: url('images/resume.jpg');
+}
+
+.drawings-page {
+  background-image: url('images/art.jpg');
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  position: sticky; /* Make header sticky */
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around; /* Center and space out links */
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+main {
+  max-width: 1000px; /* Increase width of main content */
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p, li {
+  margin-bottom: 15px;
+  overflow: hidden; /* Clear floats */
+}
+
+img {
+  width: 100%;
+  max-width: 200px;
+  margin: 10px;
+  float: left; /* Float image to the left */
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+div {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+
