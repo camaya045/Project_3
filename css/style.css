@@ -1,3 +1,4 @@
+/* Reset default browser styling */
 * {
   margin: 0;
   padding: 0;
@@ -11,38 +12,42 @@ body {
   padding: 20px;
 }
 
-.home-page, .resume-page, .drawings-page {
-  background-size: cover;
+/* Background image for index.html */
+.index-page {
+  background-image: url('../images/resume.jpg'); 
+  background-size: cover; 
+  background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
-
-.home-page {
-  background-image: url('images/resume.jpg');
-}
-
-.resume-page {
-  background-image: url('images/resume.jpg');
-}
-
+/* Background image for drawings.html */
 .drawings-page {
-  background-image: url('images/art.jpg');
+  background-image: url('../images/art.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
+/* Background image for resume.html */
+.resume-page {
+  background-image: url('../images/resume.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
 
 header {
   background: #333;
   color: #fff;
   padding: 10px 0;
-  position: sticky; /* Make header sticky */
-  top: 0;
-  z-index: 1000;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: space-around; /* Center and space out links */
+  justify-content: center;
 }
 
 nav ul li {
@@ -56,7 +61,7 @@ nav ul li a {
 }
 
 main {
-  max-width: 1000px; /* Increase width of main content */
+  max-width: 900px;
   margin: 20px auto;
   background: #fff;
   padding: 20px;
@@ -69,16 +74,14 @@ h1, h3 {
   margin-bottom: 10px;
 }
 
-p, li {
+p {
   margin-bottom: 15px;
-  overflow: hidden; /* Clear floats */
 }
 
 img {
   width: 100%;
   max-width: 200px;
-  margin: 10px;
-  float: left; /* Float image to the left */
+  margin-bottom: 10px;
 }
 
 ul {
@@ -94,6 +97,7 @@ div {
   margin-bottom: 30px;
 }
 
+
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
@@ -104,5 +108,3 @@ div {
     margin: 10px 0;
   }
 }
-
-
