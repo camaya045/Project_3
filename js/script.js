@@ -16,12 +16,12 @@ function initMap() {
   marker = new google.maps.Marker({
     position: center,
     map: map,
-    title: "This is a custom marker",
+    title: "IIT",
   });
 
   // Create an info window for the marker
   infoWindow = new google.maps.InfoWindow({
-    content: "<h3>Custom Marker</h3><p>This is an example of a custom marker with an info window.</p>",
+    content: "",
   });
 
   // Add a click event to open the info window when the marker is clicked
