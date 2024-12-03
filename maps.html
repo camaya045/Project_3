@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project 3</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js" defer></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" defer></script>
 </head>
 
 <body class="index-page">
@@ -15,19 +18,15 @@
         <li><a href="index.html" title="Introduction">Introduction</a></li>
         <li><a href="resume.html" title="Resume">Resume</a></li>
         <li><a href="drawings.html" title="Drawings">Drawings</a></li>
-		<li><a href="maps.html" title="Maps">Maps</a></li>
+        <li><a href="maps.html" title="Maps">Maps</a></li>
       </ul>
     </nav>
   </header>
-  
+
   <h1>My Map</h1>
   <div id="map" style="height: 500px; width: 100%;"></div>
 
   <script>
-    let map;
-    let marker;
-    let infoWindow;
-
     function initMap() {
       // Set the initial center of the map
       const center = { lat: 44.429, lng: -110.584 };
@@ -68,4 +67,6 @@
     }
   </script>
 </body>
+
 </html>
+
