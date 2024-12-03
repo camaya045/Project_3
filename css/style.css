@@ -36,8 +36,6 @@ body {
   background-repeat: no-repeat;
 }
 
-
-
 header {
   background: #333;
   color: #fff;
@@ -97,7 +95,52 @@ div {
   margin-bottom: 30px;
 }
 
+/* Slider Styling */
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 8px; /* Matches main content styling */
+}
 
+.slide {
+  display: none;
+  width: 100%;
+}
+
+.slide.active {
+  display: block;
+}
+
+button.prev,
+button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+button.prev:hover,
+button.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive Design for Slider */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
@@ -106,5 +149,14 @@ div {
 
   nav ul li {
     margin: 10px 0;
+  }
+
+  .slider {
+    max-width: 100%;
+  }
+
+  button.prev,
+  button.next {
+    padding: 8px;
   }
 }

@@ -2,7 +2,7 @@
 <html lang="en"> 
 <head>
   <meta charset="utf-8">  
-  <title>Project 3</title>
+  <title>Project 3 - Drawings</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js" defer></script>
@@ -14,40 +14,29 @@
       <ul>
         <li><a href="index.html" title="Introduction">Introduction</a></li>
         <li><a href="resume.html" title="Resume">Resume</a></li>
-        <li><a href="drawings.html" title="Drawings">Drawings</a></li>
-		<li><a href="maps.html" title="Maps">Maps</a></li>
+        <li><a href="drawings.html" title="Drawings" class="active">Drawings</a></li>
+        <li><a href="maps.html" title="Maps">Maps</a></li>
       </ul>
     </nav>
   </header>
   
   <main>
-    <h1>Drawings</h1>
-      <p>Drawing is one of my favorite ways to pass the time. Most of my inspiration comes from anime.</p>
-      <p>Here are some of my personal favorite drawings that I have drawn.</p>
-    <div>
-      <img src="images/akame1.jpg" alt="A picture of Akame Hinowa holding a katana" >
-      <p>This drawing was inspired by the character Akame from the anime <em>Akame ga Kill</em> and is one</p>
-      <p>of my favorite drawings that I have made. I chose a specific scene that I liked and did</p>
-      <p>my best to draw it and shade it properly.</p>
-    </div>
-      <h2>Drawing 2</h2>
-    <div>
-      <img src="images/kiyotaka.jpg" alt="A picture of Ajanokoji Kiyotaka sitting down with a white background" >
-      <p>I took inspiration for this drawing from the anime <em>Classroom of The Elite</em>. The character I drew</p> 
-      <p>is the main character Ayanokoji, he is portrayed to be smart and composed which is why he is my favorite</p>
-      <p>character of the anime. I used an image I found on google to use as reference for his pose.</P> 
-    </div>
-      <h3>Drawing 3</h3>
-    <div>
-      <img src="images/mika.jpg" alt="A picture of Mikaela Hyakuya looking back" >
-      <p>This drawing is from the anime <em>Seraph of the End</em> anime and the character that I drew</p>
-      <p>Mikaela. The anime is about vampires and this charcter was turned into a vampire, and is one of my</p> 
-      <p>favorite characters in the show.</P> 
-    </div>
-      <h4>Other Drawings</h4>
-    <div>
-      <img src="images/zero_two.jpg" alt="A picture of zero two in color" >
-      <p>Here is another of my favorite drawings from the anime <em>Darling in The Franxx</em>.</p>
+    <h1>My Drawings</h1>
+    <p>Drawing is one of my favorite hobbies. Most of my inspiration comes from anime.</p>
+    <p>Here are some of my personal favorite drawings that I have created:</p>
+
+    <!-- Image Slider -->
+    <div class="slider">
+      <!-- Slides -->
+      <img src="images/akame1.jpg" alt="Akame Hinowa holding a katana from Akame ga Kill" class="slide active">
+      <img src="images/kiyotaka.jpg" alt="Ayanokoji Kiyotaka sitting with a composed expression" class="slide">
+      <img src="images/mika.jpg" alt="Mikaela Hyakuya looking back from Seraph of the End" class="slide">
+      <img src="images/zero_two.jpg" alt="Zero Two in color from Darling in The Franxx" class="slide">
+
+      <!-- Navigation Buttons -->
+      <button class="prev" aria-label="Previous Slide">Previous</button>
+      <button class="next" aria-label="Next Slide">Next</button>
     </div>
   </main>
 </body>
+</html>
