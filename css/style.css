@@ -126,11 +126,6 @@ div {
   color: #333;
 }
 
-.slider-container {
-  background: transparent; /* Makes the background transparent */
-  border: none; /* Removes border */
-  box-shadow: none; /* Removes shadow */
-}
 
 button.prev,
 button.next {
@@ -146,11 +141,11 @@ button.next {
 }
 
 button.prev {
-  left: -20px;
+  left: 5px;
 }
 
 button.next {
-  right: -20px;
+  right: 5px;
 }
 
 button.prev:hover,
