@@ -144,11 +144,11 @@ button.next {
 }
 
 button.prev {
-  left: 15px;
+  left: 25px;
 }
 
 button.next {
-  right: 15px;
+  right: 25px;
 }
 
 button.prev:hover,
