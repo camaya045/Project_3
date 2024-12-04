@@ -126,6 +126,9 @@ div {
   color: #333;
 }
 
+.slide.active {
+  display: block;
+}
 
 button.prev,
 button.next {
@@ -141,11 +144,11 @@ button.next {
 }
 
 button.prev {
-  left: 5px;
+  left: 10px;
 }
 
 button.next {
-  right: 5px;
+  right: 10px;
 }
 
 button.prev:hover,
