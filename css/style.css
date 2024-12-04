@@ -102,12 +102,28 @@ div {
   max-width: 600px;
   margin: auto;
   overflow: hidden;
-  border-radius: 8px; /* Matches main content styling */
+  border-radius: 8px;
+  background: #fff; /* Ensure text and images have a proper background */
+  padding: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .slide {
   display: none;
+  text-align: center; /* Center-align text and images */
+}
+
+.slide img {
   width: 100%;
+  max-width: 500px;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.slide p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
 }
 
 .slide.active {
@@ -140,23 +156,4 @@ button.next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Responsive Design for Slider */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
 
-  nav ul li {
-    margin: 10px 0;
-  }
-
-  .slider {
-    max-width: 100%;
-  }
-
-  button.prev,
-  button.next {
-    padding: 8px;
-  }
-}
