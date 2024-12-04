@@ -126,9 +126,6 @@ div {
   color: #333;
 }
 
-.slide.active {
-  display: block;
-}
 
 button.prev,
 button.next {
