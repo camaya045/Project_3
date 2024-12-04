@@ -156,4 +156,22 @@ button.next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* Responsive Map Styling */
+.map-container {
+  position: relative;
+  width: 100%; /* Full width */
+  padding-top: 56.25%; /* Aspect ratio 16:9 */
+  overflow: hidden;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  border: none; /* Removes border */
+}
+
+
 
